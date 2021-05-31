@@ -1,0 +1,34 @@
+$color-purple: #8033FD;
+$color-black: #3D3131;
+$color-white: #FFFFFF;
+$color-grey: #787171;
+$color-lavand: #EDF0F7;
+@mixin display-spasebtw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin button {
+    background-color: $color-purple;
+    border-radius: 10px;
+    color: $color-white;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Intro-Bold;
+}
+
+@mixin title {
+    font-size: 55px;
+    line-height: 72px;
+    color: $color-black;
+    font-family: Intro-Black;
+}
+
+@mixin text {
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-grey;
+    width: 730px;
+    margin: 0 auto;
+}

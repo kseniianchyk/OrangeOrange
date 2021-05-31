@@ -1,0 +1,467 @@
+    @import 'fonts.scss';
+    @import 'reset-styles.scss';
+    @import 'vars.scss';
+    // header
+    .header {
+        box-shadow: 0px 4px 30px rgba(188, 188, 188, 0.25);
+        &__container {
+            @include display-spasebtw;
+            max-width: 1110px;
+            margin: 0 auto;
+            padding: 9px 0;
+        }
+        &__nav {
+            @include display-spasebtw;
+            position: relative;
+        }
+        &__menu {
+            @include display-spasebtw;
+        }
+        &__menu-link {
+            margin-right: 48px;
+            font-size: 18px;
+            line-height: 28px;
+            color: $color-black;
+        }
+        &__menu-language {
+            @include display-spasebtw;
+        }
+        &__menu-language-name {
+            margin: 0 5px 0 8px;
+            font-size: 18px;
+            line-height: 28px;
+            color: $color-black;
+            vertical-align: bottom
+        }
+        &__menu-language-btn {
+            background: transparent;
+            border: 0;
+            outline: none;
+            padding: 0;
+        }
+        &__menu-choose-language {
+            display: none;
+            position: absolute;
+            right: 277px;
+            bottom: -40px;
+        }
+        &__menu-choose-link {
+            display: block;
+        }
+        &__btn {
+            @include button;
+            padding: 12px 32px;
+            margin-left: 38px;
+            transition: all .7s;
+            &:hover {
+                background-color: transparent;
+                box-shadow: 0 0 10px 0 $color-purple, 0 0 15px 1px $color-purple;
+                color: $color-purple;
+            }
+        }
+    }
+    
+    // /header
+    // burger
+    .burger {
+        margin-left: 30px;
+        display: none;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+        >span {
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 20px;
+            height: 3px;
+            background-color: $color-purple;
+        }
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            background-color: $color-purple;
+            height: 3px;
+            width: 100%;
+        }
+        &::after {
+            bottom: 0;
+        }
+    }
+    
+    // /burger
+    // main
+    .main {
+        text-align: center;
+        &__title {
+            @include title;
+            text-transform: uppercase;
+            margin-top: 60px;
+        }
+        &__sub-title-content {
+            background-color: $color-purple;
+            width: 638px;
+            margin: 0 auto;
+            border-radius: 10px;
+            position: relative;
+            margin-bottom: 32px;
+        }
+        &__sub-title-decore {
+            position: absolute;
+            top: -5px;
+            right: -7px;
+            width: 17px;
+            height: 17px;
+            background-color: $color-purple;
+            box-shadow: 1px 4px 18px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            &::before {
+                content: '';
+                display: block;
+                border-radius: 50%;
+                background: $color-white;
+                width: 7px;
+                height: 7px;
+                margin: 6px 4px 4px 4px;
+            }
+            &.decore--left {
+                left: -7px;
+                top: 60px;
+            }
+        }
+        &__sub-title {
+            @include title;
+            text-transform: uppercase;
+            color: $color-white;
+        }
+        &__text-title {
+            font-size: 25px;
+            line-height: 35px;
+            color: $color-black;
+            font-family: Intro-Regular;
+            margin-bottom: 30px;
+        }
+        &__text {
+            @include text;
+        }
+        &__image {
+            width: 100%;
+            height: auto;
+            padding: 80px 105px 84px 104px;
+        }
+    }
+    
+    // /main
+    // advantages
+    .advantages {
+        background: url('../images/advantages-bg.png') no-repeat top;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        &__title {
+            padding-top: 111px;
+            @include title;
+            margin-bottom: 15px;
+        }
+        &__sub-title {
+            @include text;
+        }
+        &__slider {
+            max-width: 1164px;
+            margin: 0 auto 40px auto;
+        }
+        &__slider-item {
+            margin: 0 15px;
+            box-shadow: 6px 25px 15px 4px rgba(219, 221, 226, 0.25);
+            border-radius: 30px;
+            background-color: $color-white;
+            text-align: center;
+            width: 350px;
+            height: 542px;
+            padding: 35px 29px 28px 29px;
+        }
+        &__slider-img {
+            margin: 0 auto;
+        }
+        &__slider-title {
+            font-size: 25px;
+            line-height: 35px;
+            color: $color-black;
+            font-family: Intro-Bold;
+            margin: 35px auto 20px auto;
+        }
+        &__slider-text {
+            font-size: 18px;
+            line-height: 28px;
+            color: $color-grey;
+        }
+        .slick-list {
+            padding: 35px 10px;
+        }
+        .slick-next,
+        .slick-prev {
+            top: 63%;
+        }
+    } // /advantages
+    // reviews
+    .reviews {
+        padding: 75px 0 100px 0;
+        position: relative;
+        &__slider {
+            max-width: 729px;
+            margin: 0 auto;
+        }
+        &__slider-item {
+            text-align: center;
+        }
+        &__slider-text {
+            font-family: Intro-Book-Italic;
+            font-size: 30px;
+            line-height: 40px;
+            color: $color-black;
+            padding-bottom: 30px;
+        }
+        &__slider-img>img {
+            margin: 0 auto;
+        }
+        &__slider-name {
+            font-family: Intro-Bold;
+            font-size: 22px;
+            line-height: 28px;
+            color: $color-black;
+            padding: 10px 0 5px 0;
+        }
+        &__slider-position {
+            font-size: 18px;
+            line-height: 28px;
+            color: $color-grey;
+        }
+        .slick-next,
+        .slick-prev {
+            top: 50%;
+        }
+    } // /reviews
+    // features
+    .features {
+        padding: 59px 0 107px 0;
+        text-align: center;
+        &__title {
+            @include title;
+        }
+        &__sub-title {
+            @include text;
+            margin: 15px auto 43px auto;
+            max-width: 730px;
+        }
+        &__content {
+            @include display-spasebtw;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__accordion {
+            width: 510px;
+            margin-left: 41px;
+        }
+        &__accordion-title {
+            font-family: Intro-Black;
+            font-size: 35px;
+            line-height: 45px;
+            color: $color-purple;
+        }
+        &__accordion-text {
+            @include text;
+            width: 445px;
+            margin: 0;
+        }
+    } // /features
+    // form
+    .form {
+        text-align: center;
+        background: url('../images/form-bg.png') no-repeat top;
+        &__title {
+            @include title;
+            margin-bottom: 5px;
+            padding-top: 209px;
+        }
+        &__sub-title-content {
+            background-color: $color-purple;
+            width: 427px;
+            margin: 0 auto;
+            border-radius: 10px;
+            position: relative;
+            margin-bottom: 10px;
+            &.content--big {
+                width: 473px;
+            }
+        }
+        &__sub-title-decore {
+            position: absolute;
+            top: -5px;
+            right: -7px;
+            width: 17px;
+            height: 17px;
+            background-color: $color-purple;
+            box-shadow: 1px 4px 18px rgba(0, 0, 0, 0.25);
+            border-radius: 50%;
+            &::before {
+                content: '';
+                display: block;
+                border-radius: 50%;
+                background: $color-white;
+                width: 7.45px;
+                height: 7.45px;
+                margin: 5px auto;
+            }
+            &.decore--left {
+                left: -7px;
+                top: 60px;
+            }
+        }
+        &__sub-title {
+            @include title;
+            color: $color-white;
+        }
+        &__content {
+            width: 541px;
+            margin: 30px auto 67px auto;
+            display: flex;
+            flex-direction: column;
+        }
+        &__input,
+        &__textarea {
+            resize: none;
+            margin-bottom: 20px;
+            border: 2px solid $color-purple;
+            background: transparent;
+            border-radius: 10px;
+            padding: 16px 24px;
+            font-size: 18px;
+            line-height: 24px;
+            color: $color-black;
+            font-family: Intro-Book;
+            &::placeholder {
+                color: $color-black;
+            }
+        }
+        &__textarea {
+            height: 183px;
+            background: $color-lavand;
+            outline: none;
+        }
+        &__btn {
+            @include button;
+            padding: 16px 32px;
+            width: 196px;
+            margin: 0 auto;
+            transition: all .7s;
+            &:hover {
+                background-color: transparent;
+                box-shadow: 0 0 10px 0 $color-purple, 0 0 15px 1px $color-purple;
+                color: $color-purple;
+            }
+        }
+    }
+    
+    // /form
+    // footer
+    .footer {
+        text-align: center;
+        padding: 27px 0 26px 0;
+        background: $color-white;
+        &__name {
+            margin: 27px auto 24px auto;
+            position: relative;
+            width: 209px;
+            &::after {
+                content: '';
+                display: block;
+                background: $color-grey;
+                position: absolute;
+                height: 1px;
+                width: 56px;
+                bottom: 2px;
+                right: 8px;
+            }
+        }
+        &__name-text {
+            font-size: 18px;
+            line-height: 28px;
+            color: $color-grey;
+        }
+        &__name-img {
+            vertical-align: middle;
+        }
+        &__copyright {
+            font-size: 14px;
+            line-height: 28px;
+            color: $color-grey;
+        }
+    }
+    
+    // /footer
+    // accordion-Features
+    .ui-accordion .ui-accordion-header {
+        background-color: $color-purple;
+        color: $color-white;
+        font-size: 35px;
+        text-align: start;
+        padding: 12px 68px 12px 20px;
+        border: 2px solid $color-purple;
+        border-radius: 10px;
+        width: fit-content;
+        margin: 0 0 20px 0;
+    }
+    
+    .ui-accordion .ui-accordion-header.ui-accordion-header-active {
+        background-color: transparent;
+        color: $color-purple;
+    }
+    
+    .ui-accordion .ui-accordion-content {
+        background-color: transparent;
+        border: 0;
+        padding: 0 0 20px 0;
+        text-align: start;
+    }
+    
+    .ui-icon.iconClosed {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        top: 26px;
+        right: 20px;
+        background: url("../images/accordion-open.png") no-repeat;
+    }
+    
+    .ui-icon.iconOpen {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        top: 26px;
+        right: 20px;
+        background: url("../images/accordion-close.png") no-repeat;
+    } // /accordion-Features
+    // slider
+    .slick-slider {
+        position: static;
+    }
+    
+    .slick-next:before {
+        content: url('../images/slider-next.png');
+    }
+    
+    .slick-prev:before {
+        content: url('../images/slider-prev.png');
+    }
+    
+    .slick-prev {
+        left: 30px;
+    }
+    
+    .slick-next {
+        right: 30px;
+    } // /slider
+    @import 'adaptive.scss';

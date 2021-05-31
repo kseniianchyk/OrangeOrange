@@ -1,0 +1,316 @@
+                    @import 'vars.scss';
+                    @media (min-width: 1680px) {
+                        .slick-next {
+                            right: 14%;
+                        }
+                        .slick-prev {
+                            left: 14%;
+                        }
+                    }
+                    
+                    @media (max-width: 1332px) {
+                        .features {
+                            &__img {
+                                margin-bottom: 50px;
+                            }
+                        }
+                    }
+                    
+                    @media (max-width: 1256px) {
+                        .header {
+                            padding: 0 20px;
+                        }
+                        .advantages {
+                            &__slider {
+                                width: 768px;
+                                margin: 0 auto;
+                            }
+                            &__slider-item {
+                                height: 574px;
+                            }
+                        }
+                    }
+                    
+                    @media (max-width: 1023px) {
+                        .main {
+                            padding: 0 20px;
+                            &__image {
+                                padding: 50px 0 35px 0;
+                            }
+                        }
+                        .advantages {
+                            &__slider {
+                                width: 350px;
+                                margin: 0 auto;
+                            }
+                            &__slider-item {
+                                height: 630px;
+                            }
+                        }
+                        .reviews {
+                            &__slider {
+                                width: 500px;
+                            }
+                            &__slider-item {
+                                width: 100%;
+                            }
+                        }
+                        .features {
+                            padding: 0 20px 30px 20px;
+                            &__img {
+                                width: 100%;
+                                >img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    
+                    @media (max-width: 767px) {
+                        .burger {
+                            display: block;
+                        }
+                        .header {
+                            &__container {
+                                justify-content: center;
+                                &.menu-open {
+                                    width: 100%;
+                                    margin: 0 auto;
+                                    text-align: center;
+                                }
+                                &.menu-open .header__nav {
+                                    display: block;
+                                }
+                            }
+                            &__nav {
+                                display: none;
+                                padding-top: 20px;
+                                position: absolute;
+                                left: 0;
+                                top: 94px;
+                                text-align: center;
+                                height: 100%;
+                                width: 100%;
+                                z-index: 2;
+                                background-color: $color-lavand;
+                            }
+                            &__menu {
+                                display: block;
+                            }
+                            &__menu-item {
+                                padding-bottom: 30px;
+                            }
+                            &__menu-link {
+                                margin: 0;
+                            }
+                            &__menu-language {
+                                justify-content: center;
+                            }
+                            &__menu-choose-language {
+                                position: static;
+                                margin: 15px 10px 0 0;
+                            }
+                            &__btn {
+                                margin: 30px auto 0 auto;
+                            }
+                        }
+                        .main {
+                            padding: 0 20px;
+                            &__title {
+                                font-size: 48px;
+                            }
+                            &__sub-title-content {
+                                width: 100%;
+                            }
+                            &__text {
+                                width: 100%;
+                            }
+                        }
+                        .advantages {
+                            padding: 0 20px;
+                            &__title {
+                                font-size: 48px;
+                            }
+                            &__sub-title {
+                                width: 100%;
+                            }
+                        }
+                        .reviews {
+                            padding: 55px 20px;
+                            &__slider {
+                                width: 100%;
+                            }
+                            &__slider-text {
+                                font-size: 18px;
+                                line-height: 30px;
+                            }
+                            &__slider-text {
+                                font-size: 22px;
+                            }
+                            .slick-next,
+                            .slick-prev {
+                                top: 67%;
+                            }
+                        }
+                        .features {
+                            padding: 0 20px;
+                            &__title {
+                                font-size: 48px;
+                            }
+                            &__sub-title {
+                                width: 100%;
+                            }
+                            &__accordion {
+                                width: 100%;
+                                margin: 0 auto;
+                            }
+                            .ui-accordion .ui-accordion-header {
+                                width: 100%;
+                            }
+                        }
+                        .form {
+                            padding: 0 20px;
+                            &__title {
+                                font-size: 48px;
+                            }
+                            &__sub-title {
+                                width: 100%;
+                            }
+                            &__sub-title-content.content--big {
+                                width: 100%;
+                            }
+                            &__content {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    
+                    @media (max-width: 567px) {
+                        .ui-accordion .ui-accordion-header {
+                            font-size: 25px;
+                            padding: 10px;
+                        }
+                        .form {
+                            &__sub-title-content {
+                                background-color: #8033FD;
+                                width: 100%;
+                            }
+                        }
+                    }
+                    
+                    @media (max-width: 425px) {
+                        .main {
+                            &__title {
+                                font-size: 32px;
+                            }
+                            &__sub-title {
+                                font-size: 25px;
+                                line-height: 50px;
+                            }
+                            &__sub-title-decore.decore--left {
+                                top: auto;
+                                bottom: -7px;
+                            }
+                            &__text-title {
+                                font-size: 22px;
+                            }
+                        }
+                        .advantages {
+                            background: none;
+                            &__title {
+                                font-size: 32px;
+                                padding-top: 45px;
+                                line-height: 50px;
+                            }
+                            &__sub-title {
+                                font-size: 22px;
+                                line-height: 35px;
+                            }
+                            &__slider {
+                                width: 100%;
+                            }
+                            &__slider-item {
+                                height: 100%;
+                            }
+                            .slick-list {
+                                padding: 35px 0;
+                            }
+                            .slick-next,
+                            .slick-prev {
+                                top: 50%;
+                                z-index: 2;
+                            }
+                            .slick-next {
+                                right: 0;
+                            }
+                            .slick-prev {
+                                left: 0;
+                            }
+                        }
+                        .advantages {
+                            &__slider-item {
+                                height: 720px;
+                            }
+                            &__slider-title {
+                                font-size: 22px;
+                            }
+                            &__slider-text {
+                                font-size: 18px;
+                                line-height: 30px;
+                            }
+                            .slick-next {
+                                right: 0;
+                            }
+                            .slick-prev {
+                                left: 0;
+                            }
+                        }
+                        .features {
+                            &__title {
+                                font-size: 32px;
+                                padding-top: 20px;
+                            }
+                            &__sub-title {
+                                font-size: 22px;
+                                line-height: 35px;
+                            }
+                            &__accordion-text {
+                                font-size: 17px;
+                                width: 100%;
+                            }
+                            .ui-accordion .ui-accordion-header {
+                                font-size: 18px;
+                                line-height: 32px;
+                                padding: 10px;
+                            }
+                            .ui-icon.iconClosed,
+                            .ui-icon.iconOpen {
+                                width: 22px;
+                                height: 23px;
+                                right: 12px;
+                                top: 18px;
+                                background-position: center;
+                                background-size: cover;
+                            }
+                        }
+                        .form {
+                            background: none;
+                            &__title {
+                                font-size: 32px;
+                                line-height: 48px;
+                                padding-top: 70px;
+                            }
+                            &__sub-title-content {
+                                width: 100%;
+                            }
+                            &__sub-title {
+                                font-size: 25px;
+                                line-height: 50px;
+                            }
+                            &__sub-title-decore.decore--left {
+                                left: -7px;
+                                top: auto;
+                                bottom: -6px;
+                            }
+                        }
+                    }
